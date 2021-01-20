@@ -1,12 +1,33 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">{{home}}</router-link> |
+      <router-link to="/about">{{about}}</router-link>
     </div>
     <router-view />
   </div>
 </template>
+
+<script>
+    
+    
+export default {
+    name: "app",
+    computed: {
+        home() {
+            return this.$store.getters.testfunc[0].nav.home;
+        },
+        about() {
+            return this.$store.getters.testfunc[0].nav.about;            
+        }
+    },
+    beforeMount() {
+        this.$store.dispatch("disparts");
+    }
+
+}
+    
+</script>
 
 <style lang="scss">
 #app {

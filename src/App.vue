@@ -1,28 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">{{home}}</router-link> |
-      <router-link to="/about">{{about}}</router-link>
-    </div>
-    <router-view />
+    <the-header />
+     <router-view />
+    <the-footer />
   </div>
 </template>
 
 <script>
     
+    import TheHeader from "./components/global/TheHeader.vue";
+    import TheFooter from "./components/global/TheFooter.vue";
+    
     
 export default {
     name: "app",
-    computed: {
-        home() {
-            return this.$store.getters.testfunc[0].nav.home;
-        },
-        about() {
-            return this.$store.getters.testfunc[0].nav.about;            
-        }
-    },
-    beforeMount() {
-        this.$store.dispatch("disparts");
+    components: {
+        TheHeader,
+        TheFooter
     }
 
 }
@@ -30,6 +24,14 @@ export default {
 </script>
 
 <style lang="scss">
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #FB8C00
+}    
+    
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

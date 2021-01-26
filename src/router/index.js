@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import ContactezNous from "../views/ContactezNous.vue";
+import PageNotFound from "../views/PageNotFound.vue";
 
 Vue.use(VueRouter);
 
@@ -20,6 +21,11 @@ const routes = [
         path: "/telecharger",
         name: "Telecharger",
         component: () => import("../views/Telecharger.vue")
+    },
+    {
+        path: "*",
+        name: "PageNotFound",
+        component: PageNotFound
     }
 ];
 

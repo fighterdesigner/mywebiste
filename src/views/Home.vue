@@ -11,7 +11,7 @@
     <div class="col-md-6 col-xs-12 text-xs-center">
     	<small class="text-muted">Full Stack Developer</small>
       <h1>Fighter Designer</h1>
-      <p class="lead text-muted">I am a full stack developer and iam very passioned doing that even if iam not in the mode of doing it, my favourite quote is <sup class="px-1"><i class="fas fa-quote-left"></i></sup>If you really want to do something, you'll find a way. If you don't, you'll find an excuse<sup class="px-1"><i class="fas fa-quote-right"></i></sup>.</p>
+      <p class="lead text-muted">I am a full stack developer and iam very passioned doing that even if iam not in the mode of doing it, my favourite quote is <sup class="px-1"><i class="fas fa-quote-left"></i></sup>If you really want to do something, you'll find a way. If you don't, you'll find an excuse<sup class="px-1"><i class="fas fa-quote-right"></i></sup></p>
         <router-link to="/contact" class="btn bg-light m-2 shadow buttons-border-blue">Contact Me</router-link>
         <router-link to="/resume" class="btn bg-light m-2 shadow buttons-border-blue">View My CV</router-link>
   </div>
